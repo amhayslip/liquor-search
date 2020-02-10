@@ -1,0 +1,22 @@
+{
+  "name": "book-shelf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectshft/book-shelf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projectshft/book-shelf/issues"
+  },
+  "homepage": "https://github.com/projectshft/book-shelf#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

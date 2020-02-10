@@ -13,35 +13,39 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 offset-md-3">
-        <div class="page-header">
-          <h1>Durham ABC Liquor Search, NC</h1>
-          <hr/>
-        </div>
-
-
-        <form class="search-form">
-          <h3>Search Books</h3>
-
-          <div class="form-group">
-            <input type="text" id="search-query" class="form-control">
-            </input>
+          <div class="page-header">
+            <h1>Durham ABC Liquor Search, NC</h1>
+            <hr/>
           </div>
 
-          <button type='button' class="btn btn-primary search">Search</button>
-        </form>
+          <div class="product-search">
+            <form class="search-form">
+              <h3>Search Books</h3>
 
-        <hr/>
+              <div class="form-group">
+                <input type="text" id="search-query" class="form-control">
+                </input>
+              </div>
 
-        <div class="products row">
+              <button type='submit' class="btn btn-primary search">Search</button>
+            </form>
+
+            <hr/>
+
+            <div class="products row"></div>
+          </div>
+
+          <div class="product-detail">
+
+          </div>
 
         </div>
       </div>
     </div>
-    </div>
 
   <script id="product-template" type="text/x-handlebars-template">
-    <div class="product col-md-6">
-      <h4>{{ description }}</h4>
+    <div class="product col-md-6" data-plu={{plu}}>
+      <h4 class="description"><a href="#">{{ description }}</a></h4>
       <div>Size: <strong>{{ size }}</strong></div>
       <div>Price: <strong>{{ price }}</strong></div>
       <div>Total Available: <strong>{{ available }}</strong></div>

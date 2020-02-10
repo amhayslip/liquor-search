@@ -1,4 +1,5 @@
 let products = [];
+let currentProduct = null;
 
 const fetch = (query) => {
   let searchUrl = 'http://durhamabc.tagretail.com/transack/live_qoh/plus.json?search=' +  query;
@@ -73,8 +74,14 @@ const renderProducts = () => {
   }
 }
 
-$('.search').on('click', () => {
+$('.search-form').on('submit', (e) => {
+  e.preventDefault();
+
   const search = $('#search-query').val();
 
   fetch(search);
+});
+
+$('.products').on('click', '.description', () => {
+  console.log('hey')
 });
